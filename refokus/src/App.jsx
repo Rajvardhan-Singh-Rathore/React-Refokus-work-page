@@ -7,11 +7,13 @@ import Marquees from './components/Marquees'
 import Cards from './components/Cards'
 import Footer from './components/Footer'
 import LocomotiveScroll from 'locomotive-scroll';
+import Cursor from './components/Cursor'
 
 function App() {
   const scroll = new LocomotiveScroll();
   return (
-    <div className="w-full min-h-screen font-[] bg-zinc-900 text-white">
+    <div className="w-full min-h-screen font-[] bg-zinc-900 text-white cursor-none">
+      <Cursor></Cursor>
       <Navbar></Navbar>
       <Work></Work>
       <Stripes/>
